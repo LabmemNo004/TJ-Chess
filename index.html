@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>挑夹棋</title>
+    <link rel="stylesheet" type="text/css" href="Board.css">
+</head>
+<body>
+
+<button id="btn" type="button">New Game</button>
+<div id="console">
+    <mark id="mode_t">Mode</mark>
+    <button id="ai" type="button">AI</button>
+    <button id="players" type="button">PLAYERS</button>
+    <mark id="aiMode_t">AI</mark>
+    <button id="simple" type="button">SIMPLE</button>
+    <button id="hard" type="button">HARD</button>
+    <button id="ex" type="button">EX</button>
+    <mark id="field_t">FIELD</mark>
+    <button id="fieldB" type="button">Black</button>
+    <button id="fieldW" type="button">White</button>
+    <button id="start" type="button">Start</button>
+</div>
+
+<canvas id="chessboard" width="560" height="560"></canvas>
+
+
+<div id="Count">
+    <mark id="bct">Black Count</mark>
+    <div id="BC">8</div>
+    <mark id="wct">White Count</mark>
+    <div id="WC">8</div>
+    <mark id="turn_txt">Steps</mark>
+    <div id="turns">0</div>
+</div>
+
+<div id="Rules">
+    <mark id="rule_Ch">比赛规则</mark>
+    <div id="txt_Ch">
+        0.这是一种流传在东南亚的黑白棋游戏。<br>
+        1.对局采用12*12黑白棋棋盘<br>
+        2.对局开始时8个黑子和白子的初始位置如开始游戏后的棋盘所示<br>
+        3.黑子先行，双方轮流操作。每次操作可以移动自己的一枚棋子到周围的空棋位，移动的方向为周围的八个方向（横、纵、斜线皆可），每次只能移动一格。<br>
+        4.吃子的规则如下:<br>
+        (1)夹吃：当移动己方棋子后，造成把同横、纵、斜线的一枚敌棋用两枚己棋夹住，提除该枚敌棋，替换为等量己棋。<br>
+        (2)挑吃：当移动己方棋子后，这枚己棋在同横、纵、斜线的两枚敌棋中间，提除这两枚敌棋，替换为等量己棋。<br>
+        (3)注意：移动一个棋子，可以同时造成横、纵、斜方向的吃子。<br>
+        5.游戏不会自动结束，除非开始新游戏。<br>
+        6.游戏分为人机和玩家对战两种模式，在人机模式下可以选择三种不同的AI强度。<br>
+        7.按下“new game”按钮开始游戏设置，设置完毕后按下“start”游戏开始<br>
+    </div>
+
+    <mark id="rule_En">Game Rules</mark>
+    <div id="txt_En">
+        1. The game uses a 12*12 black and white chess board.<br>
+        2. At the beginning of the game, the initial positions of the 8 black and 8 white stones are as shown on the board after starting a new game.<br>
+        3. Black spots go first, and both parties take turns to operate. You can move one of your own chess stones to the surrounding empty chess positions in each operation. The movement direction is the surrounding eight directions (horizontal, vertical, or diagonal), and you can only move one square at a time.<br>
+        4. The rules for eating points are as follows:<br>
+        (1) Clip and eat: When moving one's own chess point, an opponent's chess on the same horizontal, vertical, and diagonal line is clamped with two own chess, and the opponent's chess is removed and replaced with an equivalent chess.<br>
+        (2) Pick and eat: After moving one's own chess piece, this one's own chess is in the middle of the two opponent's moves on the same horizontal, vertical, and diagonal lines. Remove the two enemy's chess and replace it with the same number of opponent's chess.<br>
+        (3) Note: Moving a chess piece can simultaneously cause the capture of pieces in the horizontal, vertical and diagonal directions.<br>
+        5. Game won't be over unless you begin a new game.<br>
+    </div>
+</div>
+<script src="Logic.js"></script>
+</body>
+</html>

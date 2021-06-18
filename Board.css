@@ -1,0 +1,377 @@
+body
+{
+    margin: 0;
+    background-color: rgba(120,120,120,0.5); //rgb通道和alpha透明（0为全透明）
+}
+#btn
+{
+    display:block;
+    margin:20px auto;
+    width:100px;
+    padding:10px 10px;
+    background-color:rgba(200,200,200,0.5);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+}
+#chessboard
+{
+    display: block;
+    margin: 30px auto;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#Count
+{
+    display:block;
+    margin:10px 5px;
+    width:110px;
+    padding:10px 10px;
+    background-color:rgba(150,150,150,0.5);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border: 4px solid #808080;
+    border-radius:10px;
+    text-decoration:none;
+    position: absolute;
+    left: 1110px;
+    top:200px;
+}
+#console
+{
+    display:block;
+    margin:10px 5px;
+    width:110px;
+    padding:10px 10px;
+    background-color:rgba(150,150,150,0.5);
+    font-family: Arial, fantasy;
+    outline:none;
+    color:rgb(255,255,255);
+    border: 4px solid #808080;
+    border-radius:10px;
+    text-decoration:none;
+    position: absolute;
+    left: 250px;
+    top:60px;
+    text-align: center;
+
+}
+#ai
+{
+    display:block;
+    margin:10px auto;
+    width:80px;
+    padding:10px 10px;
+    background-color: #FFFFFF;
+    font-family: Arial, fantasy;
+    color:#C8C8C8;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#players
+{
+    display:block;
+    margin:10px auto 20px;
+    width:80px;
+    padding:10px 10px;
+    background-color:#C8C8C8;
+    font-family: Arial, fantasy;
+    color:#FFFFFF;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#simple
+{
+    display:block;
+    margin:10px auto;
+    width:80px;
+    padding:10px 10px;
+    background-color:#FFFFFF;
+    font-family: Arial, fantasy;
+    color:#C8C8C8;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#hard
+{
+    display:block;
+    margin:10px auto;
+    width:80px;
+    padding:10px 10px;
+    background-color:#C8C8C8;
+    font-family: Arial, fantasy;
+    color:#FFFFFF;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#ex
+{
+    display:block;
+    margin:10px auto 20px;
+    width:80px;
+    padding:10px 10px;
+    background-color:#C8C8C8;
+    font-family: Arial, fantasy;
+    color:#FFFFFF;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#fieldB
+{
+    display:block;
+    margin:10px auto;
+    width:80px;
+    padding:10px 10px;
+    background-color:#C8C8C8;
+    font-family: Arial, fantasy;
+    color:#FFFFFF;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#fieldW
+{
+    display:block;
+    margin:10px auto 20px;
+    width:80px;
+    padding:10px 10px;
+    background-color:#FFFFFF;
+    font-family: Arial, fantasy;
+    color:#C8C8C8;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#start
+{
+    display:block;
+    margin:10px auto;
+    width:90px;
+    padding:10px 10px;
+    background-color: #888888;
+    font-family: Arial, fantasy;
+    color:#FFFFFF;
+    outline: none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+
+}
+
+#Rules
+{
+    display:block;
+    margin:10px auto;
+    width:560px;
+    padding:10px 10px;
+    background-color:rgba(150,150,150,0.5);
+    font-family: Arial, fantasy;
+    outline:none;
+    color:rgb(80,80,80);
+    border: 4px solid #808080;
+    border-radius:10px;
+    text-decoration:none;
+    position: absolute;
+    left: 470px;
+    top:750px;
+    text-align: center;
+}
+#rule_Ch
+{
+    display:block;
+    margin:10px auto;
+    width:540px;
+    padding:10px 10px;
+    font-family: Arial, fantasy;
+    background-color:rgba(120,120,120, 0);
+    color:#FFFFFF;
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: center;
+}
+#txt_Ch
+{
+    display:block;
+    margin:10px auto;
+    width:540px;
+    padding:10px 10px;
+    font-family: Arial, fantasy;
+    background-color:rgba(250,250,250,0);
+    color: rgb(255, 255, 255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: left;
+}
+#rule_En
+{
+    display:block;
+    margin:10px auto;
+    width:540px;
+    padding:10px 10px;
+    font-family: Arial, fantasy;
+    background-color:rgba(120,120,120, 0);
+    color: #FFFFFF;
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: center;
+}
+#txt_En
+{
+    display:block;
+    margin:10px auto;
+    width:540px;
+    padding:10px 10px;
+    font-family: Arial, fantasy;
+    background-color:rgba(250,250,250,0);
+    color: rgb(255, 255, 255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: left;
+}
+#aiMode_t
+{
+    display:block;
+    margin:10px auto;
+    width:40px;
+    padding:10px 10px;
+    background-color: rgba(120,120,120, 0);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#field_t
+{
+    display:block;
+    margin:10px auto;
+    width:40px;
+    padding:10px 10px;
+    background-color: rgba(120,120,120, 0);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#mode_t
+{
+    display:block;
+    margin:10px auto;
+    width:40px;
+    padding:10px 10px;
+    background-color: rgba(120,120,120, 0);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    position: center;
+}
+#bct
+{
+    display:block;
+    margin:10px auto;
+    width:90px;
+    padding:10px 10px;
+    background-color:rgba(150,150,150,0);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+}
+#wct
+{
+    display:block;
+    margin:10px auto;
+    width:90px;
+    padding:10px 10px;
+    background-color:rgba(150,150,150,0);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+}
+#BC
+{
+    display:block;
+    margin:10px auto;
+    width:30px;
+    height:12px;
+    padding:10px 10px;
+    background-color:rgba(250,250,250,1);
+    font-family: Arial, fantasy;
+    color:rgb(80,80,80);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: center;
+}
+#WC
+ {
+     display:block;
+     margin:10px auto;
+     width:30px;
+     height:12px;
+     padding:10px 10px;
+     background-color:rgba(250,250,250,1);
+     font-family: Arial, fantasy;
+     color:rgb(80,80,80);
+     outline:none;
+     border-radius:10px;
+     text-decoration:none;
+     text-align: center;
+ }
+#turns
+{
+    display:block;
+    margin:10px auto;
+    width:30px;
+    height:12px;
+    padding:10px 10px;
+    background-color:rgba(250,250,250,1);
+    font-family: Arial, fantasy;
+    color:rgb(80,80,80);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: center;
+}
+#turn_txt
+{
+    display:block;
+    margin:10px auto;
+    width:90px;
+    padding:10px 10px;
+    background-color:rgba(150,150,150,0);
+    font-family: Arial, fantasy;
+    color:rgb(255,255,255);
+    outline:none;
+    border-radius:10px;
+    text-decoration:none;
+    text-align: center;
+}
+
