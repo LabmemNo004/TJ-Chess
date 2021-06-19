@@ -4,7 +4,7 @@
 
 运行说明：
 
-demo网址：LabmemNo004.github.io（国内需连VPN）
+demo网址：tjchess.labmem.site
 
 fork后本地点击index.html运行
 
