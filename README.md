@@ -4,7 +4,7 @@
 
 运行说明：
 
-demo网址：https://tjchess.labmem.site
+demo网址：http://tjchess.labmem.site
 
 fork后本地点击index.html运行
 
